@@ -7,3 +7,4 @@ COPY target/springboot-aws-lambda-0.0.1-SNAPSHOT-aws.jar springboot-aws-lambda-0
 COPY target/classes /var/task
 COPY target/dependency/* /var/task/lib/
 ENTRYPOINT ["java", "-jar","target/springboot-aws-lambda-0.0.1-SNAPSHOT-aws"]
+CMD [ "com.javatechie.aws.lambda.OrderHandler"]
